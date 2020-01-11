@@ -5,3 +5,6 @@ MVP和MVVM比较类似，唯一区别是MVVM多了一层数据和VM的双向或�
 采用FaceBook的KVOController来完成View和VM的绑定。
 另外会把数据访问层单独抽离出来，最终其实是MVPS和MVVMS
 
+MVPS-Demo1是其中一个写法，Presenter通过Protocol调用View的接口
+MVPS-Demo2是另外一种写法，View层会处理少量逻辑，并且通过block调用View的接口
+MVVMS-Demo View层通过KVO单向监听VM层数据或者状态改变
